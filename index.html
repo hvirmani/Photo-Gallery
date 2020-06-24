@@ -11,10 +11,11 @@
         }
 
         .head {
-            height: 15vh;
             background: red;
         }
-
+        .nav{
+            padding: 12px;
+        }
         .icon {
             font-size: 50px;
         }
@@ -76,30 +77,41 @@
         .products{
             padding:5vh 5vw;
         }
+        .responsive{
+            float:left;
+            width: 30%;
+            padding: 10px;
+            margin:1%;
+        }
         .im1 {
             width: 45%;
+            max-width: 300px;
             height: 40vh;
             padding:1vh;
+            border-radius: 20px;
         }
-
-        @media screen and (min-width:1000px) {
+        .about{
+            width:50%;
+            text-align: justify;
+            font-size: 20px;
+            padding:2vh 2vw;
+        }
+        @media screen and (min-width:900px) {
             .im1 {
-                width: 31.5%;
-                
+                min-width: 200px;
+                width: 28%;
+                margin: 0 1%;
             }
-
-            /*.products1 {
-                padding: 3vh 10.5vw 1vh 10.5vw;
+            .products{
+                margin: 0 5%;
             }
-
-            .products2 {
-                padding: 1vh 10.5vw 1vh 10.5vw;
-            }
-
-            .products3 {
-                padding: 1vh 10.5vw 3vh 10.5vw;
-            }*/
         }
+        .clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+        
     </style>
 </head>
 
@@ -117,38 +129,55 @@
 
     </div>
     <div class="main">
-       <div class="products">
-           <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-       </div>
-        <!--<div class="products1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
+       <!--<div class="products">
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+            <div class="responsive">
+                <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            </div>
+        </div> <div class="clearfix"></div>-->
+        <div class="products">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
+            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg">
         </div>
-        <div class="products2">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-        </div>
-        <div class="products3">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-            <img src="https://5.imimg.com/data5/PE/PL/MY-3485190/1-250x250.jpg" alt="" class="im1">
-        </div>-->
     </div>
     <div class="abt">
-
+        <div class="about">
+            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        </div>
+        
     </div>
     <div class="contact">
 
