@@ -1,1 +1,146 @@
-s
+ * {
+     margin: 0;
+     padding: 0;
+ }
+
+ .head {
+     background: red;
+     height: 10vh;
+ }
+
+ .icon {
+     font-size: 40px;
+     padding: 0 5vh;
+ }
+
+ .nav {
+     float: right;
+     margin: 2.5vh 2vw;
+     margin-right: 5vw;
+ }
+
+ button {
+     width: 10vw;
+     height: 5vh;
+     max-width: 100px;
+ }
+
+ .parallel {
+     background: green;
+     height: 90vh;
+ }
+
+ .main {
+     background: aqua;
+ }
+
+ .abt {
+     background: blue;
+     min-height: 70vh;
+ }
+
+ .contact {
+     background: gray;
+     height: 50vh;
+ }
+
+ .foot {
+     background: yellow;
+     height: 10vh;
+     font-size: 25px;
+     text-align: center;
+
+ }
+
+ .parallel {
+     background-image: url(https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+ }
+
+ .products {
+     padding: 5vh;
+ }
+
+ img {
+     width: 100%;
+     border-radius: 20px;
+     border: none;
+ }
+
+ .image {
+     float: left;
+     width: 30%;
+     padding: 2% 1.6%;
+ }
+
+ .abt {
+     padding: 0 5vh 5vh;
+ }
+
+ .about {
+     width: 30%;
+     text-align: justify;
+     font-size: 20px;
+     float: left;
+     padding: 0 5%;
+ }
+
+ .a {
+     margin-left: 10%;
+ }
+
+ .b {
+     width: 35%;
+     margin-right: 5%;
+ }
+
+ .abt_img {
+     width: 100%;
+
+ }
+
+
+ .clearfix {
+     content: "";
+     display: table;
+     clear: both;
+ }
+
+ .heading {
+     font-size: 40px;
+     text-align: center;
+     padding: 10px;
+ }
+
+ @media only screen and (max-width:850px) {
+     .image {
+         width: 45%;
+         padding: 2% 2.5%;
+     }
+
+     .a {
+         margin: 0;
+     }
+
+     .b {
+         margin: 0;
+     }
+
+     .about {
+         width: 40%;
+         text-align: justify;
+         font-size: 20px;
+         float: left;
+         padding: 0 5%;
+     }
+ }
+
+ @media only screen and (max-width:450px) {
+     .image {
+         width: 85%;
+         padding: 2% 7.5%;
+     }
+ }
