@@ -242,7 +242,7 @@ button:hover{
  }
 
  .parallel {
-     background-image: url(https://images.pexels.com/photos/1148998/pexels-photo-1148998.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+     background-image: url(images/main.jpg);
      background-repeat: no-repeat;
      background-position: center;
      background-attachment: fixed;
@@ -253,14 +253,17 @@ button:hover{
      padding: 5vh;
  }
 
-.image img,.parallel {
+.image img{
      width: 100%;
      border-radius: 20px;
      border: none;
      filter:  grayscale(5%);
      opacity: 0.8;
  }
-
+.parallel{
+    filter:  grayscale(5%);
+    opacity: 0.8;
+}
  .image{
      float: left;
      width: 30%;
@@ -287,7 +290,13 @@ button:hover{
      width: 35%;
      margin-right: 5%;
  }
-
+.abt{
+    background-image: url(images/main.jpg);
+    background-repeat: no-repeat;
+     background-position: center;
+     background-attachment: fixed;
+     background-size: cover;
+}
  .abt_img {
      width: 100%;
 
