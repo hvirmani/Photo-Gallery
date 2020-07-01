@@ -2,27 +2,26 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-.head {
+    overflow-x: hidden;
     background: #1a202c;
+    color: white;
+    font-family: Montserrat;
 }
 
-.icon {
+/*.icon {
     font-size: 50px;
     text-align:left;
     margin-left: 5vw;
-}
-@media only screen and(max-width:620px){
-    .head{
-        display: block;
-        margin: 500px;
-    }
 }
 .nav {
     float: right;
     margin: 2.5vh 2vw;
     margin-right: 5vw;
+}*/
+
+.nav {
+    text-align: center;
+    margin: 1%;
 }
 
 button {
@@ -33,42 +32,25 @@ button {
     color: orangered;
     font-size: 18px;
     border: 1.5px solid orangered;
-    background: #1a202c;
     transition: background 1s;
     transition: color 0.5s;
     font-weight: 500;
 }
 
-button:hover {
+button:hover,
+button:active {
     background: orangered;
     color: white;
+    outline: none;
 }
 
 .parallel {
-    background: green;
     height: 90vh;
 }
 
-.main {
-    background: #1a202c;
-}
-
-.abt {
-    background: #1a202c;
-}
-
 .contact {
-    background: #1a202c;
     padding: 1%;
     padding-bottom: 2%;
-}
-
-.foot {
-    background: yellow;
-    height: 10vh;
-    font-size: 25px;
-    text-align: center;
-
 }
 
 .parallel {
@@ -83,21 +65,21 @@ button:hover {
     padding: 5vh;
 }
 
-.kl {
-    background: #1a202c;
-}
-
-h6 {
+h6,
+h4 {
     text-align: center;
-    font-family: sans-serif;
-    background: url(images/1.jpg);
+    background-image: linear-gradient(90deg, #00bfb2 0%, #c373f2 74%);
     color: transparent;
     font-size: 80px;
+    font-family: Montserrat;
     font-weight: 1000;
     background-position: center;
     background-size: cover;
     -webkit-background-clip: text;
+}
 
+h4 {
+    font-family: sans-serif;
 }
 
 .image img {
@@ -121,33 +103,22 @@ h6 {
 }
 
 .abt {
-    padding: 0 5vh 5vh;
-    color: white;
-}
-
-.ab_t {
-    margin: auto;
-    width: 90%;
+    padding: 5vh 5vh;
 }
 
 .about {
     width: 50%;
     text-align: justify;
-    font-size: 20px;
     float: left;
     padding: 0 5%;
-}
+    font-size: 30px;
 
-/*.abt{
-    background-image: url(images/main.jpg);
-    background-repeat: no-repeat;
-     background-position: center;
-     background-attachment: fixed;
-     background-size: cover;
-}*/
+}
 
 .abt_img {
     width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 
@@ -163,53 +134,78 @@ h6 {
     padding: 10px;
 }
 
-/*.main{
-    background: url(https://images.pexels.com/photos/2501965/pexels-photo-2501965.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-    background-repeat: no-repeat;
-     background-position: center;
-     background-attachment: fixed;
-     background-size: cover;
-}
-/*.abt{
-    background: url(https://images.pexels.com/photos/1005644/pexels-photo-1005644.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
-    background-repeat: no-repeat;
-     background-position: center;
-     background-attachment: fixed;
-     background-size: cover;
-}*/
-input,textarea {
-    margin: 1% 0;
-    width: 49.75%;
-    text-align: center;
-    border-radius: 5px;
+input,
+textarea {
+    margin: 1.5% 0;
+    width: 49.5%;
+    text-align: justify;
+    border-radius: 10px;
     border: none;
     padding: 2vh;
+    font-family: Montserrat;
+    font-size: 20px;
+    background: inherit;
+    color: goldenrod;
+    border-bottom: 2px solid white;
+    transition: border-bottom 1s;
 }
 
-@media only screen and (max-width:850px) {
-    input{
+input:focus,
+textarea:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid orangered;
+}
+
+@media only screen and (max-width:1300px) {
+    .about {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width:1015px) {
+    .about {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1000px) {
+    input {
         width: 100%;
     }
 
     .image {
         width: 50%;
         padding: 2%;
-    }
-    .ab_t {
-        width: 100%;
+        cursor: pointer;
     }
 }
 
-@media only screen and (max-width:450px) {
+@media only screen and (max-width:620px) {
     .image {
-        width: 85%;
-        padding: 2% 7.5%;
+        width: 100%;
+        padding: 2%;
+    }
+
+    .about {
+        width: 100%;
+    }
+
+    .a {
+        font-size: 25px;
+        padding-bottom: 5%;
+    }
+
+    h6 {
+        font-size: 50px;
     }
 }
-textarea{
+
+textarea {
     width: 100%;
-    height:12vh;
+    height: 15vh;
 }
+
 .image img:hover,
 .parallel:hover {
     filter: none;
@@ -221,7 +217,12 @@ textarea{
     margin: auto;
 }
 
-.msg {
-    width: 100%;
-    min-height: 12vh;
+.foot {
+    font-family: Segoe Print;
+    font-size: 25px;
+    text-align: center;
+    padding: 3%;
+}
+.abt_img{
+    min-height: 30vh;
 }

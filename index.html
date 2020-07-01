@@ -4,23 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <title>Website</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var i = 0;
+        var txt = 'lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.';
+        var speed = 50;
+
+        function typeWriter() {
+            if (i < txt.length) {
+                document.getElementById("demo").innerHTML += txt.charAt(i);
+                i++;
+                setTimeout(typeWriter, speed);
+            }
+        }
+    </script>
 </head>
 
-<body>
-    <div class="kl">
-        <h6>#Photography</h6>
+<body onload="typeWriter();">
+    <div class="txt top" id="home">
+        <h4>#Photography</h4>
     </div>
     <div class="head">
-        <span class="icon">📷 🎥 📹</span>
-        <div class="clear" style="display: none;"></div>
+        <!--<span class="icon">Photography</span>-->
+
         <div class="nav">
-            <button>Home </button>
-            <button>Store</button>
-            <button>About</button>
-            <button>Contact</button>
+            <a href="#contact"><button >Home</button></a>
+            <a href="#gallery"><button >Gallery</button></a>
+            <a href="#about"><button >About</button></a>
+            <a href="#contact"><button >Contact</button></a>
         </div>
         <div class="clearfix">
 
@@ -31,7 +46,7 @@
     <div class="parallel">
 
     </div>
-    <div class="main">
+    <div class="main" id="gallery">
         <div class="products">
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/1.jpg"></div>
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/2.jpg"></div>
@@ -39,7 +54,7 @@
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/4.jpg"></div>
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/5.jpg"></div>
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/6.jpg"></div>
-            <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="https://images.pexels.com/photos/589840/pexels-photo-589840.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></div>
+            <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/9.jpg"></div>
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/7.jpg"></div>
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/8.jpg"></div>
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/14.jpg"></div>
@@ -51,29 +66,29 @@
 
         </div>
     </div>
-    <div class="kl">
+    <div class="txt" id="about">
         <h6>About Us</h6>
     </div>
-    <div class="abt">
-        <div class="about a">
-            lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+    <div class="abt" >
+        <div class="about a" id="demo">
+
         </div>
         <div class="about b">
-            <img class="abt_img" src="https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?auto=compress&cs=tinysrgb&h=650&w=940">
+            <img class="abt_img" src="images/16.jpg">
         </div>
 
         <div class="clearfix">
 
         </div>
     </div>
-    <div class="kl">
+    <div class="txt">
         <h6>Contact Us</h6>
     </div>
-    <div class="contact">
+    <div class="contact" id="contact">
         <div class="form">
-            <input type="text" placeholder="Enter Your Name">
-            <input type="email" placeholder="Enter your E-mail:">
-            <textarea placeholder="Your Message" ></textarea>
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="E-mail">
+            <textarea placeholder="Your Message"></textarea>
         </div>
         <div class="clearfix">
 
