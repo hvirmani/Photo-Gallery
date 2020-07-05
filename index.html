@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Photography</title>
-      <link rel="icon" href="https://img.icons8.com/plasticine/2x/camera.png" type="image/gif">
+    <link rel="icon" href="https://img.icons8.com/plasticine/2x/camera.png" type="image/gif">
 
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
@@ -23,10 +23,10 @@
         <!--<span class="icon">Photography</span>-->
 
         <div class="nav">
-            <a href="#contact"><button >Home</button></a>
-            <a href="#gallery"><button >Gallery</button></a>
-            <a href="#about"><button >About</button></a>
-            <a href="#contact"><button >Contact</button></a>
+            <a href="#home"><button>Home</button></a>
+            <a href="#gallery"><button>Gallery</button></a>
+            <a href="#about"><button>About</button></a>
+            <a href="#contact"><button>Contact</button></a>
         </div>
         <div class="clearfix">
 
@@ -37,7 +37,13 @@
     <div class="parallel">
 
     </div>
-    <div class="main" id="gallery">
+    <div class="clearfix" id="gallery">
+
+    </div>
+    <div class="txt">
+        <h6>Gallery</h6>
+    </div>
+    <div class="main">
         <div class="products">
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/1.jpg"></div>
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/2.jpg"></div>
@@ -53,19 +59,19 @@
             <div class="image" data-aos="zoom-in" data-aos-duration="500"><img src="images/11.jpg"></div>
 
         </div>
-        <div class="clearfix">
-
-        </div>
     </div>
-    <div class="txt" id="about">
+    <div class="clearfix" id="about">
+
+    </div>
+    <div class="txt">
         <h6>About Us</h6>
     </div>
-    <div class="abt" >
+    <div class="abt">
         <div class="about a" id="demo">
 
         </div>
         <div class="about b">
-            <img class="abt_img" src="images/18.jpg"S>
+            <img class="abt_img" src="images/18.jpg" S>
         </div>
 
         <div class="clearfix">
@@ -76,14 +82,17 @@
         <h6>Contact Us</h6>
     </div>
     <div class="contact" id="contact">
-        <div class="form">
-            <input type="text" placeholder="Name">
-            <input type="email" placeholder="E-mail">
-            <textarea placeholder="Your Message"></textarea>
-        </div>
-        <div class="clearfix">
-
-        </div>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <input type="submit" id="submit">
+        </form>
+        <!--<div class="form">
+            <input type="text" placeholder="Name"  required>
+            <input type="email" placeholder="E-mail" required>
+            <textarea placeholder="Your Message" required></textarea>
+        </div>-->
     </div>
     <div class="foot">
         Made with❤️by Harshit

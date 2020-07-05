@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
     background: #1a202c;
     color: white;
     font-family: Montserrat;
@@ -21,7 +20,6 @@
 
 .nav {
     text-align: center;
-    margin: 1%;
 }
 
 button {
@@ -35,6 +33,7 @@ button {
     transition: background 1s;
     transition: color 0.5s;
     font-weight: 500;
+    outline: none;
 }
 
 button:hover,
@@ -88,11 +87,7 @@ h4 {
     border: none;
     filter: grayscale(5%);
     opacity: 0.8;
-}
-
-.parallel {
-    filter: grayscale(5%);
-    opacity: 0.8;
+    cursor: pointer;
 }
 
 .image {
@@ -148,13 +143,39 @@ textarea {
     color: goldenrod;
     border-bottom: 2px solid white;
     transition: border-bottom 1s;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 input:focus,
 textarea:focus {
+    overflow: visible;
     border: none;
     outline: none;
     border-bottom: 3px solid orangered;
+}
+
+#submit {
+    width: 10vw;
+    height: 5vh;
+    max-width: 130px;
+    color: orangered;
+    font-size: 18px;
+    border: 1.5px solid orangered;
+    transition: background 1s;
+    transition: color 0.5s;
+    font-weight: 500;
+    outline: none;
+    text-align: center;
+    padding: 1%;
+    margin-top: 5%;
+}
+
+#submit:hover {
+    background: orangered;
+    color: white;
+    outline: none;
 }
 
 @media only screen and (max-width:1300px) {
@@ -206,15 +227,16 @@ textarea {
     height: 15vh;
 }
 
-.image img:hover,
-.parallel:hover {
+.image img:hover {
     filter: none;
     opacity: 1;
+    transform: scale(1.1);
 }
 
-.form {
+form {
     width: 60%;
     margin: auto;
+    text-align: center;
 }
 
 .foot {
@@ -223,6 +245,24 @@ textarea {
     text-align: center;
     padding: 3%;
 }
-.abt_img{
+
+.abt_img {
     min-height: 30vh;
+}
+
+.head {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    padding: 1%;
+}
+
+#gallery,
+#about {
+    height: 7vh;
+}
+
+.btn {
+    margin: 1%;
+    text-align: center;
 }
